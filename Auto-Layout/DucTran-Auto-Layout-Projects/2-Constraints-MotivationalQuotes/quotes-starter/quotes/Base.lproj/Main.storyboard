@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_5" orientation="portrait">
+    <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -24,11 +24,11 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mrl-FX-0Fp">
-                                <rect key="frame" x="20" y="672" width="374" height="44"/>
+                                <rect key="frame" x="20" y="416" width="280" height="44"/>
                                 <color key="backgroundColor" red="0.39930355635743098" green="1" blue="0.86712072747065094" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="TwO-hh-0gR"/>
@@ -46,18 +46,20 @@
                                     <action selector="getNewQuoteTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hfc-zf-Nf2"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="thumb_stevejobs" translatesAutoresizingMaskIntoConstraints="NO" id="YUn-tt-cCo">
-                                <rect key="frame" x="167" y="42" width="80" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thumb_stevejobs" translatesAutoresizingMaskIntoConstraints="NO" id="YUn-tt-cCo">
+                                <rect key="frame" x="120" y="42" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="IXM-1X-8L5"/>
+                                    <constraint firstAttribute="width" constant="80" id="z8v-lJ-PTc"/>
+                                </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your time is limited. So don't waste it living someone else's life." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ECP-Wn-dEC">
-                                <rect key="frame" x="36" y="339.33333333333331" width="342" height="57.666666666666686"/>
+                                <rect key="frame" x="36" y="197" width="248" height="86.5"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="21"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Steve Jobs" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kb3-gR-8UO">
-                                <rect key="frame" x="155" y="130" width="105" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Steve Jobs" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kb3-gR-8UO">
+                                <rect key="frame" x="108" y="130" width="105" height="29"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="21"/>
                                 <color key="textColor" red="0.98823529409999999" green="0.28235294119999998" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -67,7 +69,11 @@
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mrl-FX-0Fp" secondAttribute="bottom" constant="20" id="0Lp-5T-eZh"/>
                             <constraint firstItem="ECP-Wn-dEC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="0ZY-Wq-ZII"/>
+                            <constraint firstItem="YUn-tt-cCo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2hf-rP-a7O"/>
                             <constraint firstAttribute="trailing" secondItem="mrl-FX-0Fp" secondAttribute="trailing" constant="20" id="9KM-Hs-9AX"/>
+                            <constraint firstItem="Kb3-gR-8UO" firstAttribute="top" secondItem="YUn-tt-cCo" secondAttribute="bottom" constant="8" id="GfX-ys-aF2"/>
+                            <constraint firstItem="YUn-tt-cCo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="22" id="Kat-kQ-R99"/>
+                            <constraint firstItem="Kb3-gR-8UO" firstAttribute="centerX" secondItem="YUn-tt-cCo" secondAttribute="centerX" id="RJN-NK-ryp"/>
                             <constraint firstItem="mrl-FX-0Fp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="X2w-dl-NOf"/>
                             <constraint firstAttribute="trailing" secondItem="ECP-Wn-dEC" secondAttribute="trailing" constant="36" id="jaY-Lf-e6m"/>
                             <constraint firstItem="ECP-Wn-dEC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="36" id="o7C-0T-laf"/>
