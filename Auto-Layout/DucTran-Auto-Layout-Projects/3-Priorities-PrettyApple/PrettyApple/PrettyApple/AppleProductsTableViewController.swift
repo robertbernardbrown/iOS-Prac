@@ -16,6 +16,9 @@ class AppleProductsTableViewController: UITableViewController {
         super.viewDidLoad()
         navigationItem.rightBarButtonItem = editButtonItem
         
+        tableView.estimatedRowHeight = tableView.rowHeight
+        tableView.rowHeight = UITableViewAutomaticDimension
+        
         // Make the row height dynamic
         tableView.estimatedRowHeight = tableView.rowHeight
         tableView.rowHeight = UITableViewAutomaticDimension

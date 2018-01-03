@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="yq6-ay-Lzl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="yq6-ay-Lzl">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -27,35 +27,47 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WGc-Ks-RJH">
-                                            <rect key="frame" x="8" y="8" width="90" height="90"/>
+                                            <rect key="frame" x="16" y="11" width="90" height="90"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="90" id="Ai0-eB-Po0"/>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="90" id="VTe-4g-I9E"/>
                                                 <constraint firstAttribute="height" constant="90" id="dG5-FH-NtQ"/>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="qz7-eo-BJB"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="SXb-x4-mn0">
-                                            <rect key="frame" x="106" y="9" width="261" height="20"/>
+                                            <rect key="frame" x="114" y="12" width="253" height="20"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <nil key="highlightedColor"/>
+                                            <color key="highlightedColor" red="0.39930355639999998" green="1" blue="0.86712072750000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="240" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Od4-HG-kUU">
-                                            <rect key="frame" x="106" y="36" width="261" height="117"/>
+                                            <rect key="frame" x="114" y="39" width="253" height="114.5"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="SXb-x4-mn0" secondAttribute="trailing" constant="8" id="AaC-Fx-8W9"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="Od4-HG-kUU" secondAttribute="bottom" id="BW8-Gf-hmq"/>
                                         <constraint firstItem="SXb-x4-mn0" firstAttribute="top" secondItem="L0I-mU-Akp" secondAttribute="topMargin" constant="1" id="DBU-3I-hFm"/>
+                                        <constraint firstAttribute="bottom" secondItem="Od4-HG-kUU" secondAttribute="bottom" constant="8" id="FjT-45-XLY"/>
+                                        <constraint firstItem="Od4-HG-kUU" firstAttribute="top" secondItem="SXb-x4-mn0" secondAttribute="bottom" constant="8" id="NL4-21-xlb"/>
                                         <constraint firstAttribute="leadingMargin" secondItem="WGc-Ks-RJH" secondAttribute="leading" id="OfZ-nm-6oQ"/>
                                         <constraint firstItem="SXb-x4-mn0" firstAttribute="leading" secondItem="WGc-Ks-RJH" secondAttribute="trailing" constant="8" id="RMG-Qn-92o"/>
                                         <constraint firstAttribute="topMargin" secondItem="WGc-Ks-RJH" secondAttribute="top" id="S4t-yR-rg1"/>
+                                        <constraint firstItem="SXb-x4-mn0" firstAttribute="top" secondItem="L0I-mU-Akp" secondAttribute="top" constant="12" id="TQK-8Y-jYu"/>
+                                        <constraint firstItem="WGc-Ks-RJH" firstAttribute="top" secondItem="L0I-mU-Akp" secondAttribute="top" constant="11" id="YJ7-xE-uUX"/>
+                                        <constraint firstAttribute="trailing" secondItem="SXb-x4-mn0" secondAttribute="trailing" constant="16" id="au9-1I-OR0"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="SXb-x4-mn0" secondAttribute="trailing" id="jek-H8-iLm"/>
                                         <constraint firstItem="Od4-HG-kUU" firstAttribute="leading" secondItem="WGc-Ks-RJH" secondAttribute="trailing" constant="8" id="lrb-kk-v9U"/>
+                                        <constraint firstItem="WGc-Ks-RJH" firstAttribute="leading" secondItem="L0I-mU-Akp" secondAttribute="leading" constant="16" id="mbK-dE-YPu"/>
                                         <constraint firstItem="Od4-HG-kUU" firstAttribute="top" secondItem="SXb-x4-mn0" secondAttribute="bottom" constant="7" id="mfb-Ll-ixz"/>
+                                        <constraint firstItem="SXb-x4-mn0" firstAttribute="leading" secondItem="WGc-Ks-RJH" secondAttribute="trailing" constant="8" id="oL0-cJ-0TM"/>
+                                        <constraint firstAttribute="trailing" secondItem="Od4-HG-kUU" secondAttribute="trailing" constant="8" id="pVA-Hn-07u"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="Od4-HG-kUU" secondAttribute="trailing" id="qju-Ch-vph"/>
+                                        <constraint firstItem="Od4-HG-kUU" firstAttribute="leading" secondItem="WGc-Ks-RJH" secondAttribute="trailing" constant="8" id="yvC-1V-9xU"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -99,13 +111,19 @@
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OaD-Gh-lhu">
                                                     <rect key="frame" x="8" y="8" width="359" height="264"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="264" id="js0-Qh-nOo"/>
+                                                    </constraints>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="OaD-Gh-lhu" firstAttribute="top" secondItem="y6d-7h-X2c" secondAttribute="top" constant="8" id="75p-AX-Bkk"/>
                                                 <constraint firstAttribute="trailing" secondItem="OaD-Gh-lhu" secondAttribute="trailing" constant="8" id="Gy0-Fm-Vf0"/>
+                                                <constraint firstAttribute="trailing" secondItem="OaD-Gh-lhu" secondAttribute="trailing" constant="8" id="Gyu-NN-YXw"/>
                                                 <constraint firstItem="OaD-Gh-lhu" firstAttribute="leading" secondItem="y6d-7h-X2c" secondAttribute="leading" constant="8" id="O0R-D7-ZPL"/>
                                                 <constraint firstItem="OaD-Gh-lhu" firstAttribute="top" secondItem="y6d-7h-X2c" secondAttribute="top" constant="8" id="WCr-gL-em7"/>
                                                 <constraint firstAttribute="bottom" secondItem="OaD-Gh-lhu" secondAttribute="bottom" constant="8" id="dQh-8I-uq8"/>
+                                                <constraint firstItem="OaD-Gh-lhu" firstAttribute="leading" secondItem="y6d-7h-X2c" secondAttribute="leading" constant="8" id="pvz-dl-K02"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -156,7 +174,6 @@
                                             <subviews>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f1R-0S-hzt">
                                                     <rect key="frame" x="8" y="8" width="359" height="146"/>
-                                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -194,7 +211,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yq6-ay-Lzl" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="mf0-IR-tQO">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
